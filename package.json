@@ -1,0 +1,22 @@
+{
+  "name": "blackhoney",
+  "version": "1.0.0",
+  "description": "bhp landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmdcraft/blackhoney.git"
+  },
+  "author": "Kelly Mac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmdcraft/blackhoney/issues"
+  },
+  "homepage": "https://github.com/kmdcraft/blackhoney#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
