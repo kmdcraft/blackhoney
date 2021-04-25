@@ -1,3 +1,163 @@
-body {
-   background-color: red;
+* {
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+   position: absolute;
+   right: 0;
+   width: 100vw;
+   min-height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #111;
+   color: white;
+   z-index: 2;
+
+   video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.7;
+   }
+
+   header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 40px 100px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .logo {
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &.active {
+         color: goldenrod;
+         //change this to affect line class w/ js later
+      }
+   }
+
+   .toggle {
+      position: relative;
+      cursor: pointer;
+   }
+}
+
+.line {
+   background-color: white;
+   z-index: 11;
+   height: 3px;
+   width: 35px;
+   margin: 8px;
+}
+
+.menu {
+   display: none;
+   z-index: 1;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(117, 82, 22, 0.71);
+   mix-blend-mode: overlay;
+}
+
+.text {
+   z-index: 10;
+
+   h2 {
+      font-size: 4em;
+      font-weight: 700;
+      line-height: 1em;
+      //text-transform: uppercase;
+   }
+
+   p {
+      font-size: 1.2em;
+      margin: 15px 0;
+   }
+
+   a {
+      display: inline-block;
+      font-size: 1em;
+      background: white;
+      padding: 10px 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      border-radius: 15px;
+      margin-top: 10px;
+      letter-spacing: 2px;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+.social {
+   list-style: none;
+   z-index: 10;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   height: 80px;
+   width: auto;
+   margin: 12px;
+   padding: 0;
+
+   li {
+      margin-right: 7px;
+      width: 40px;
+      height: 40px;
+
+      img {
+         width: 32px;
+         height: 32px;
+      }
+   }
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+}
+
+.arrow {
+   z-index: 10;
+   position: absolute;
+   left: 49vw;
+   bottom: 20px;
+}
+
+#middle {
+   z-index: 12333;
+   padding: 40px;
+   height: 60vh;
+}
+
+.align {
+   display: flex;
+   flex-direction: column;
+}
+
+.filler {
+   height: 100vh;
+   z-index: -50;
 }
