@@ -55,18 +55,21 @@
    .toggle {
       position: relative;
       cursor: pointer;
-      //border: 2px solid white;
+
+      .line {
+         background-color: white;
+         z-index: 11;
+         height: 4px;
+         width: 35px;
+         margin: 0 0 8px 0;
+
+         //rotate into X (hover ->.close) rotate not working?? y tho
+         &:hover {
+            transform: rotate(90);
+            background-color: blueviolet;
+         }
+      }
    }
-}
-
-.line {
-   background-color: white;
-   z-index: 11;
-   height: 4px;
-   width: 35px;
-   margin: 0 0 8px 0;
-
-   @include easeOut;
 }
 
 .menu {
